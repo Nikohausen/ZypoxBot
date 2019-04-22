@@ -23,8 +23,7 @@ async def livecounter(ctx):
 		file = open('channel_id.txt', 'r')
 		channelid = file.read()
 		print(' + Channel ID Config: ', channelid)
-		VoiceChannel = client.get_channel(569875375149023232)
+		VoiceChannel = client.get_channel(569896261864390657)
 		await VoiceChannel.edit(name='Mitglieder: {}'.format(members))
-
 
 client.run("NTY5NTI5MDQ2NDU1ODEyMDk2.XLx9yA.Y7Kmoka0NaTjvKHsly-MU5p7bGU")
