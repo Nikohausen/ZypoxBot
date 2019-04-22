@@ -4,14 +4,14 @@ from discord.ext import commands
 from discord.utils import get
 
 client = commands.Bot(command-prefix='.')
-client.remove_command('help')
+
 @client.event
 async def on_ready():
 	await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="Zypox"))
 
 
 @client.command(pass_context=True)
-async def start(ctx):
+async def livecounter(ctx):
 	while True:
 		author = ctx.message.author
 		guild = ctx.message.guild
